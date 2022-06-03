@@ -1,38 +1,48 @@
 package arrayProgramm;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class RemoveDuplicatesArray 
 {
 	public static void main(String[] args) 
 	{
 		int arr[]= {1,9,4,3,5,4,5,6,4,7,2,9,7,9,9};
-		int n = arr.length;
+		Arrays.sort(arr);
+		System.out.println("Input array"+"\n"+Arrays.toString(arr));
 
-        int[] temp = new int[n];  
-
-		int j=0;
-		for(int i=0; i<n-1; i++)
-		{
+		int duplicates=0;
 		
-			if(arr[i]!=arr[i+1])
+			for(int i=0; i<arr.length-1; i++)
 			{
-				temp[j++]=arr[i];
+				if(arr[i]==arr[i+1])
+				{
+					duplicates++;
+				}
 			}
 		
+		
+		int nonduplicates = arr.length-duplicates;
+		
+		System.out.println("Array for duplicates :"+nonduplicates);
+		
+		int[] arr2=new int[nonduplicates-2];
+	
+		int index=0;
+		for(int i=0; i<arr2.length-1; i++)
+		{	
+			for (int j=1; j<arr2.length-1; j++)
+			{  
+				if(arr[i]!=arr[j])
+				{
+					
+					arr2[index]=arr[j];
+					index++;
+				}
+	        } 
 		}
-		
-		temp[j++] = arr[n-1];  
-		for (int i=0; i<j; i++){  
-            arr[i] = temp[i];
-        } 
-		
-//		for(int i=0; i<arr.length; i++)
-//		{
-//			System.out.print(arr[i]+" ");
-//		}
-		
-		System.out.println( Arrays.toString(arr));
+			
+		System.out.println("duplicates removed"+"\n"+ Arrays.toString(arr2));
 		
 	}
 }
