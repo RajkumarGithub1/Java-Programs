@@ -5,7 +5,7 @@ public class AlphaNumericSeparation {
 	public static void main(String[] args) 
 	{
 		
-		String str="rajkumar123@@.!";
+		String str="rajkuMar123@@.!";
 		String s="";
 		String number="";
 		String alpha="";
@@ -44,15 +44,14 @@ public class AlphaNumericSeparation {
 		System.out.println("count Nos :"+count2);
 		System.out.println("alpha num :"+spl);
 		System.out.println("alpha chars :"+alpha);
-		
 	
 
 //		ALTERNATE 
 //		
 //		String s="Rajkumar123@@.!";
-//		System.out.println(s.replaceAll("[^0-9]", ""));  //for numbers
-//		System.out.println(s.replaceAll("[^a-zA-Z]", ""));  //for String data
-//		System.out.println(s.replaceAll("[0-9a-zA-Z]", "")); //for alpha numeric
+//		System.out.println(s.replaceAll("[^0-9]", ""));  //for numbers in out put
+//		System.out.println(s.replaceAll("[^a-zA-Z]", ""));  //for String data in out put
+//		System.out.println(s.replaceAll("[0-9a-zA-Z]", "")); //for alpha numeric in out put
 
 		
 		
