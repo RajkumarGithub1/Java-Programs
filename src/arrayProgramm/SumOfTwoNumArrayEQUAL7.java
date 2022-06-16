@@ -1,7 +1,7 @@
 package arrayProgramm;
 
 
-public class SumOfTwoNumArray7 
+public class SumOfTwoNumArrayEQUAL7 
 {
 	public static void main(String[] args) 
 	{

@@ -9,10 +9,10 @@ public class RepeatedCharInArray
 	
 		char [] c= {'c','a','a', 'c','a', 'c','c'};
 		Arrays.sort(c);
-		
+		int count;
 		for(int i=0; i<c.length-1; i++)
 		{
-			int count=0;
+			 count=0;
 
 			for(int j=1; j<c.length; j++)
 			{
@@ -20,7 +20,7 @@ public class RepeatedCharInArray
 				if(c[i]==c[j])
 				{
 					count++;
-					System.out.print(c[i]+" ");
+//					System.out.print(c[i]+" ");
 				}
 			}
 			System.out.println(c[i]+" "+count);
