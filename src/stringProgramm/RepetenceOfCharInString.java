@@ -4,7 +4,7 @@ public class RepetenceOfCharInString {
 
 	public static void main(String[] args) 
 	{
-		String s1="RAJKUMAR";
+		String s1="ababababcdcdcd";
 		String s=s1.toLowerCase();        //IN SINGLE STRING - REPETENCE
 		//String s2="sravya";
 		

@@ -7,7 +7,7 @@ public class RemovingDuplicatesFromIntArry
 	public static void main(String[] args) 
 	{
 
-        int []arr={2, 2,1, 1,3,3,4,4,4};
+        int []arr={2, 2,1, 1,3,3,4,4};
         Arrays.sort(arr);
 		System.out.println("Input Array :"+"\n"+ Arrays.toString(arr));
 
