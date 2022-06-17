@@ -2,7 +2,7 @@ package arrayPro16;
 
 import java.util.LinkedHashSet;
 
-public class RemovingVowelsINStringArray 
+public class CountingVowelsINStringArray 
 {
 	public static void main(String[] args) 
 	{
@@ -21,7 +21,7 @@ public class RemovingVowelsINStringArray
 			{
 				lhs.add(a);
 			}
-//				System.out.println(lhs);
+				System.out.println(lhs);
 			for(Character ch:lhs)
 			{	
 				if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
