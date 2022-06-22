@@ -15,7 +15,7 @@ public class ReverseWordwise
 //		
 //		System.out.println(rev);
 		
-		
+
 		String s="Hyderabad Test Yantra";
 		String[] ss = s.split(" ");
 		
